@@ -24,7 +24,7 @@ catkin_make
 ```
 roslaunch turtlebot3_gazebo ten_obstacle_turtlebot3.launch
 ```
-- Initiate movement and obstacle avoidance
+- Initiate movement and obstacle avoidance <br /> 
 In new terminal:
 ```
 cd ~/catkin_ws/src/pyscripts
