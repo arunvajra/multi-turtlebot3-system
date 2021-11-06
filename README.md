@@ -1,6 +1,6 @@
 # 10 Turtlebot3 System with Obstacle Avoidance
 
-Spawning 10 turtlebot 3 robots in Gazebo simulator, the turtlebots move around freely and avoids collisions through the use of planar laser range-finder.
+Spawning 10 turtlebot 3 robots in Gazebo simulator, the turtlebots move around freely and avoids collisions through the use of planar laser range-finder. Each turtlebot3 robot has a separate python script that initiates movement and obstacle avoidance. All the scripts are run concurrently using a single 'multi_launch.py' file through the subprocess module.
 
 ## Resources
 - Ubuntu 20.04
@@ -20,8 +20,15 @@ catkin_make
 
 ## Run
 
+- Launch simulator with 10 turtlebot3 robots
 ```
 roslaunch turtlebot3_gazebo ten_obstacle_turtlebot3.launch
+```
+- Initiate movement and obstacle avoidance
+In new terminal:
+```
+cd ~/catkin_ws/src/pyscripts
+python3 multi_launch.py
 ```
 
 ## Demo
